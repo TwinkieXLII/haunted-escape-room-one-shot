@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Station 2: The Alchemist's Laboratory — Print & Play Art Kit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&family=Montserrat:wght@800;900&family=Cinzel:wght@700&display=swap');
+
+  :root {
+    --bg-void: #0E0B16;
+    --bg-plum: #2C1438;
+    --neon-green: #39FF14;
+    --neon-cyan: #00F0FF;
+    --neon-magenta: #FF007F;
+    --neon-amber: #FF7700;
+    --gold: #FFD700;
+    --silver: #D4D4D8;
+    --card-bg: #1A1528;
+    --ink-border: #000000;
+  }
+
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #222;
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    color: #fff;
+  }
+
+  .print-page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto 30px auto;
+    padding: 0.4in;
+    background-color: var(--bg-void);
+    border: 2px solid #444;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    position: relative;
+    page-break-after: always;
+    overflow: hidden;
+  }
+
+  .print-page.landscape {
+    width: 11in;
+    min-height: 8.5in;
+  }
+
+  @media print {
+    body { padding: 0; background: none; }
+    .print-page { margin: 0; border: none; box-shadow: none; width: 100%; height: 100%; }
+    .no-print { display: none; }
+  }
+
+  /* Header Bar */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--neon-cyan);
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+  }
+  .page-title {
+    font-family: 'Bangers', cursive;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    text-shadow: 2px 2px 0 var(--ink-border), 0 0 10px rgba(255, 215, 0, 0.4);
+    margin: 0;
+  }
+  .page-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    background: var(--bg-plum);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--neon-cyan);
+  }
+
+  /* PAGE 1: BALANCE SCALE MAT */
+  .scale-mat {
+    width: 100%;
+    height: 7in;
+    background: radial-gradient(circle at center, #231936 0%, #0E0B16 80%);
+    border: 4px solid var(--gold);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.9), 0 0 15px rgba(255,215,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .scale-banner {
+    font-family: 'Bangers', cursive;
+    font-size: 34px;
+    color: var(--neon-cyan);
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 var(--ink-border), 0 0 15px var(--neon-cyan);
+  }
+  .scale-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .scale-pan-box {
+    width: 3.4in;
+    height: 3.4in;
+    border-radius: 50%;
+    border: 4px dashed var(--gold);
+    background: radial-gradient(circle, rgba(92,39,81,0.5) 0%, rgba(14,11,22,0.8) 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+    position: relative;
+  }
+  .pan-label {
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
+    color: var(--neon-green);
+    text-shadow: 2px 2px 0 var(--ink-border), 0 0 10px var(--neon-green);
+    margin-bottom: 5px;
+  }
+  .pan-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    color: #bbb;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .scale-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .scale-needle-dial {
+    width: 110px;
+    height: 70px;
+    border: 3px solid var(--gold);
+    border-bottom: none;
+    border-radius: 70px 70px 0 0;
+    position: relative;
+    background: #110e1c;
+    display: flex;
+    justify-content: center;
+  }
+  .scale-needle {
+    width: 4px;
+    height: 55px;
+    background: var(--neon-magenta);
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 8px var(--neon-magenta);
+    transform-origin: bottom center;
+  }
+  .scale-footer-rule {
+    font-size: 14px;
+    color: var(--gold);
+    background: rgba(0,0,0,0.6);
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--gold);
+  }
+
+  /* PAGE 2: THE 10 VIALS GRID */
+  .vials-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .vial-card {
+    background: linear-gradient(180deg, #241635 0%, #110B1A 100%);
+    border: 3px solid #000;
+    border-radius: 10px;
+    height: 4.4in;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    position: relative;
+  }
+  .vial-tag {
+    font-family: 'Bangers', cursive;
+    font-size: 22px;
+    color: var(--gold);
+    background: #000;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--gold);
+    padding: 2px 0;
+  }
+  .bottle-art {
+    width: 70px;
+    height: 140px;
+    position: relative;
+    margin: 10px 0;
+  }
+  .vial-desc {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    line-height: 1.2;
+    background: rgba(0,0,0,0.4);
+    padding: 4px;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  /* COUNTERFEIT VIAL 6 SPECIAL GLOW */
+  .vial-card.counterfeit {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  }
+  .vial-card.counterfeit .vial-tag {
+    color: var(--neon-cyan);
+    border-color: var(--neon-cyan);
+  }
+
+  /* PAGE 3: ALTAR, CREST & PENALTIES */
+  .page-3-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .altar-box {
+    background: linear-gradient(180deg, #1f142d 0%, #0d0717 100%);
+    border: 3px solid var(--neon-green);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .crest-box {
+    background: linear-gradient(180deg, #1a1a2e 0%, #0d0d1a 100%);
+    border: 3px solid var(--silver);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* PENALTY CARDS GRID */
+  .penalty-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .penalty-card {
+    background: #1B1226;
+    border: 2px solid var(--neon-magenta);
+    border-radius: 8px;
+    padding: 8px;
+    height: 2.1in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .penalty-title {
+    font-family: 'Bangers', cursive;
+    font-size: 17px;
+    color: var(--neon-magenta);
+    margin: 0;
+  }
+  .penalty-icon {
+    font-size: 32px;
+  }
+  .penalty-desc {
+    font-size: 11px;
+    color: #ddd;
+    line-height: 1.2;
+  }
+
+  /* PAGE 4: CLUE HANDOUTS */
+  .handout-sheet {
+    background: #D8CFE6;
+    color: #1A1226;
+    border: 4px solid #3c2459;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 30px rgba(60,36,89,0.3);
+    position: relative;
+  }
+  .handout-sheet h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    margin-top: 0;
+    color: #3C1A5B;
+    border-bottom: 2px solid #3C1A5B;
+    padding-bottom: 5px;
+  }
+  .handout-verse {
+    font-size: 18px;
+    line-height: 1.4;
+    font-style: italic;
+    font-weight: bold;
+    color: #240E3A;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1: TABLETOP BALANCE SCALE MAT ================= -->
+<div class="print-page landscape">
+  <div class="page-header">
+    <h1 class="page-title">⚖️ STATION 2: THE ALCHEMIST'S BALANCE SCALE MAT</h1>
+    <span class="page-tag">TABLETOP CENTERPIECE • 11" x 8.5"</span>
+  </div>
+
+  <div class="scale-mat">
+    <div class="scale-banner">HOUSE VON ZAROVICH • APOTHECARY SCALE</div>
+
+    <!-- Scaled Vector Bat Fulcrum and Balance Scale -->
+    <svg width="450" height="130" viewBox="0 0 450 130">
+      <!-- Crossbeam -->
+      <line x1="40" y1="65" x2="410" y2="65" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+      <line x1="40" y1="65" x2="410" y2="65" stroke="#00F0FF" stroke-width="2" stroke-dasharray="8 4"/>
+      
+      <!-- Bat Fulcrum -->
+      <path d="M225,20 Q200,45 190,65 Q210,75 225,95 Q240,75 260,65 Q250,45 225,20 Z" fill="#2C1438" stroke="#FFD700" stroke-width="3"/>
+      <!-- Glowing Bat Eyes -->
+      <circle cx="218" cy="50" r="3" fill="#39FF14"/>
+      <circle cx="232" cy="50" r="3" fill="#39FF14"/>
+      
+      <!-- Chains to Left Pan -->
+      <line x1="45" y1="65" x2="20" y2="125" stroke="#FFD700" stroke-width="2" stroke-dasharray="3 3"/>
+      <line x1="45" y1="65" x2="70" y2="125" stroke="#FFD700" stroke-width="2" stroke-dasharray="3 3"/>
+      <!-- Chains to Right Pan -->
+      <line x1="405" y1="65" x2="380" y2="125" stroke="#FFD700" stroke-width="2" stroke-dasharray="3 3"/>
+      <line x1="405" y1="65" x2="430" y2="125" stroke="#FFD700" stroke-width="2" stroke-dasharray="3 3"/>
+    </svg>
+
+    <!-- Two Weighing Pans -->
+    <div class="scale-board">
+      <div class="scale-pan-box">
+        <span class="pan-label">LEFT PAN</span>
+        <span class="pan-sub">[ Place Vials Here ]</span>
+      </div>
+
+      <div class="scale-center">
+        <div class="scale-needle-dial">
+          <div class="scale-needle"></div>
+        </div>
+        <span style="font-family:'Bangers'; color:var(--gold); font-size:16px; margin-top:5px;">BALANCE GAUGE</span>
+      </div>
+
+      <div class="scale-pan-box">
+        <span class="pan-label">RIGHT PAN</span>
+        <span class="pan-sub">[ Place Vials Here ]</span>
+      </div>
+    </div>
+
+    <div class="scale-footer-rule">
+      ✦ RULE: Place equal numbers of vials on each pan. The side that tilts UP is LIGHTER (Counterfeit). ✦
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= PAGE 2: THE 10 ALCHEMICAL VIALS ================= -->
+<div class="print-page">
+  <div class="page-header">
+    <h1 class="page-title">🧪 THE 10 ALCHEMICAL VIALS (CUT CARDS)</h1>
+    <span class="page-tag">10 CARDS • CUT ALONG DOTTED LINES</span>
+  </div>
+
+  <div class="vials-grid">
+    <!-- VIAL 1 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 1</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 2 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 2</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 3 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 3</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 4 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 4</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 5 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 5</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 6 (THE COUNTERFEIT!) -->
+    <div class="vial-card counterfeit">
+      <div class="vial-tag">VIAL 6</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#00F0FF" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#283A4A" stroke="#00F0FF" stroke-width="3"/>
+        <!-- Translucent Cyan Fluid with Bubbles -->
+        <path d="M12,80 Q35,90 58,80 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#00F0FF" opacity="0.8"/>
+        <circle cx="28" cy="98" r="4" fill="#FFF"/>
+        <circle cx="42" cy="115" r="3" fill="#FFF"/>
+      </svg>
+      <div class="vial-desc" style="color:var(--neon-cyan)">Pale Translucent Fluid<br><b>Weight: LIGHT (FAKE!)</b></div>
+    </div>
+
+    <!-- VIAL 7 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 7</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 8 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 8</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 9 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 9</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+
+    <!-- VIAL 10 -->
+    <div class="vial-card">
+      <div class="vial-tag">VIAL 10</div>
+      <svg class="bottle-art" viewBox="0 0 70 140">
+        <rect x="25" y="5" width="20" height="20" rx="3" fill="#111" stroke="#FFD700" stroke-width="2"/>
+        <path d="M25,25 Q15,40 10,60 L10,125 Q10,135 25,135 L45,135 Q60,135 60,125 L60,60 Q55,40 45,25 Z" fill="#4B2A0E" stroke="#FFD700" stroke-width="3"/>
+        <path d="M12,85 Q35,95 58,85 L58,125 Q58,133 45,133 L25,133 Q12,133 12,125 Z" fill="#8A3AB9"/>
+      </svg>
+      <div class="vial-desc">Dense Quicksilver<br><b>Weight: Heavy</b></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= PAGE 3: ALTAR STANDEE, CREST & PENALTY CARDS ================= -->
+<div class="print-page">
+  <div class="page-header">
+    <h1 class="page-title">🃏 ALTAR STANDEE, CREST & COMEDIC PENALTIES</h1>
+    <span class="page-tag">PUNCH-OUT TOKENS & STANDEE</span>
+  </div>
+
+  <div class="page-3-layout">
+    <!-- TRICKSTER ALTAR STANDEE -->
+    <div class="altar-box">
+      <div style="font-family:'Bangers'; color:var(--neon-green); font-size:20px;">TRICKSTER'S ALTAR STANDEE</div>
+      <svg width="180" height="150" viewBox="0 0 180 150">
+        <!-- Gargoyle Jester Head -->
+        <circle cx="90" cy="65" r="45" fill="#2C1438" stroke="#39FF14" stroke-width="3"/>
+        <!-- Horns/Jester Cap -->
+        <path d="M50,45 Q20,10 10,35 Q35,45 55,55 Z" fill="#FF007F"/>
+        <path d="M130,45 Q160,10 170,35 Q145,45 125,55 Z" fill="#FF007F"/>
+        <!-- Glowing Eyes -->
+        <ellipse cx="75" cy="60" rx="7" ry="4" fill="#FFD700"/>
+        <ellipse cx="105" cy="60" rx="7" ry="4" fill="#FFD700"/>
+        <!-- Wide Jagged Grin -->
+        <path d="M65,85 Q90,105 115,85 Z" fill="#000" stroke="#FFF" stroke-width="2"/>
+        <!-- Offering Bowl -->
+        <ellipse cx="90" cy="120" rx="50" ry="18" fill="#FFD700" stroke="#000" stroke-width="3"/>
+        <!-- Green Smoke -->
+        <path d="M70,115 Q90,80 110,115" stroke="#39FF14" stroke-width="4" fill="none" opacity="0.8"/>
+      </svg>
+      <div style="font-size:12px; color:#aaa; margin-top:5px;">FOLD AT BASE • PLACE COUNTERFEIT VIAL HERE</div>
+    </div>
+
+    <!-- ALCHEMIST CREST TOKEN -->
+    <div class="crest-box">
+      <div style="font-family:'Bangers'; color:var(--gold); font-size:20px;">ALCHEMIST CREST #2</div>
+      <svg width="150" height="150" viewBox="0 0 150 150" style="margin: 5px 0;">
+        <!-- Circular Medallion with Puzzle Teeth -->
+        <circle cx="75" cy="75" r="68" fill="#222" stroke="#D4D4D8" stroke-width="6"/>
+        <circle cx="75" cy="75" r="58" fill="#1A1528" stroke="#00F0FF" stroke-width="2"/>
+        <!-- Coiled Serpent -->
+        <path d="M75,35 Q50,60 75,85 Q100,110 75,120 Q55,100 65,75" stroke="#39FF14" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <!-- Retort Flask -->
+        <path d="M70,55 L80,55 L80,75 L95,100 L55,100 L70,75 Z" fill="none" stroke="#FFD700" stroke-width="3"/>
+      </svg>
+      <div style="font-size:11px; color:#bbb;">3" ESCAPE KEY TOKEN (SLOTS INTO GRAND GATE)</div>
+    </div>
+  </div>
+
+  <!-- 6 COMEDIC PENALTY CARDS -->
+  <div style="font-family:'Bangers'; color:var(--neon-magenta); font-size:20px; margin-bottom:8px;">
+    COMEDIC PENALTY CARDS (Puff of Smoke Side Effects)
+  </div>
+  <div class="penalty-grid">
+    <div class="penalty-card">
+      <span class="penalty-title">1. BUBBLE BURPS</span>
+      <span class="penalty-icon">🫧</span>
+      <span class="penalty-desc">You loudly burp floating glowing pink bubbles every time you speak for 5 mins!</span>
+    </div>
+    <div class="penalty-card">
+      <span class="penalty-title">2. HELIUM SQUEAK</span>
+      <span class="penalty-icon">🎈</span>
+      <span class="penalty-desc">Your voice jumps three octaves higher into a squeaky chipmunk pitch!</span>
+    </div>
+    <div class="penalty-card">
+      <span class="penalty-title">3. TOXIC GLOW</span>
+      <span class="penalty-icon">💡</span>
+      <span class="penalty-desc">Your skin glows bright radioactive lime-green (Disadvantage on Stealth)!</span>
+    </div>
+    <div class="penalty-card">
+      <span class="penalty-title">4. SNEEZE CANNON</span>
+      <span class="penalty-icon">🤧</span>
+      <span class="penalty-desc">Violent sneezing fits blow paper and dust across the room whenever you move!</span>
+    </div>
+    <div class="penalty-card">
+      <span class="penalty-title">5. LEAD BOOTS</span>
+      <span class="penalty-icon">🥾</span>
+      <span class="penalty-desc">Your boots feel like 100-lb cast iron anvils. Movement speed is halved!</span>
+    </div>
+    <div class="penalty-card">
+      <span class="penalty-title">6. JITTER FINGERS</span>
+      <span class="penalty-icon">⚡</span>
+      <span class="penalty-desc">Yellow sparks pop from your fingers; you drop small items unless held with 2 hands!</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= PAGE 4: CLUE HANDOUTS ================= -->
+<div class="print-page">
+  <div class="page-header">
+    <h1 class="page-title">📜 STATION 2: IN-WORLD CLUE HANDOUTS</h1>
+    <span class="page-tag">CUT INTO TWO SEPARATE HANDOUTS</span>
+  </div>
+
+  <!-- CLUE 1 HANDOUT -->
+  <div class="handout-sheet">
+    <h3>CLUE 1: THE TRICKSTER'S ALTAR INSCRIPTION</h3>
+    <div class="handout-verse">
+      "The Trickster mocks honest gold and heavy metal.<br>
+      Give to my bowl the hollow lie, the weightless fraud, the lightest craft,<br>
+      and the gate shall grant you passage."
+    </div>
+    <div style="margin-top:10px; font-size:12px; color:#555;">[ Carved upon the stone jester brazier before the locked gate ]</div>
+  </div>
+
+  <!-- CLUE 3 HANDOUT -->
+  <div class="handout-sheet" style="background:#E2D9EE;">
+    <h3>CLUE 3: THE APOTHECARY'S SCORCH-MARKED LEDGER</h3>
+    <div class="handout-verse">
+      "Divide the flock in halves (5 against 5); balance reveals the hollow heart.<br>
+      Divide the five by pairs (2 against 2); let the fifth sit alone upon the cloth.<br>
+      Should the pairs hang even, the lonely bottle holds the prize!"
+    </div>
+    <div style="margin-top:10px; font-size:12px; color:#555;">[ Found tucked inside the apothecary's workbench drawer ]</div>
+  </div>
+</div>
+
+</body>
+</html>

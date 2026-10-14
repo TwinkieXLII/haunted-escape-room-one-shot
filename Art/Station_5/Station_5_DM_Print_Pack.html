@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Station 5 — DM-held Props & Key</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&family=Montserrat:wght@800;900&family=UnifrakturCook:wght@700&family=EB+Garamond:wght@500;700&display=swap');
+@page { size: letter; margin: 0.5in; }
+@page land { size: letter landscape; margin: 0.5in; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: #444; font-family: 'Patrick Hand', sans-serif; color: #1A1A1A; }
+.screen { max-width: 7.5in; margin: 16px auto; color: #fff; font: 14px/1.4 Arial, sans-serif; }
+.page { width: 7.5in; height: 10in; margin: 20px auto; background: #fff; position: relative; overflow: hidden; break-after: page; }
+.page.land { page: land; width: 10in; height: 7.5in; }
+.ptitle { font: 22px 'Bangers', sans-serif; letter-spacing: 1px; margin: 0 0 .08in; color: #2C1438; }
+.note { font: 11px/1.35 Arial, sans-serif; color: #444; margin: .04in 0; }
+.dm { background: #FF007F; color: #fff; font: 900 11px Montserrat, Arial; padding: 2px 6px; border-radius: 3px; }
+.cut { outline: 1pt dashed #999; outline-offset: 0; }
+.grid { display: grid; gap: 0.08in; justify-content: center; }
+/* rack tags & ceiling cards */
+.tag { width: 2.25in; height: 3in; background: linear-gradient(160deg,#3a2a12,#1f1608); border: 3px solid #C9A13B;
+        border-radius: 8px; box-shadow: inset 0 0 0 3px #1A1A1A, inset 0 0 18px rgba(255,215,0,.25);
+        display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: .14in .1in .1in; }
+.tag .rivet { position: absolute; }
+.tag .script { min-height: .9in; display: flex; align-items: center; }
+.tag .eng { font: 800 9px Montserrat, Arial; color: #d8c79a; letter-spacing: 1px; }
+.ceil { width: 2.25in; height: 3in; background: radial-gradient(circle at 50% 40%, #241a3a, #0E0B16 75%);
+         border: 3px solid #00F0FF; border-radius: 8px; box-shadow: inset 0 0 0 3px #1A1A1A, inset 0 0 22px rgba(0,240,255,.35);
+         display: flex; align-items: center; justify-content: center; padding: .15in; }
+/* penalty cards */
+.pc { width: 2.4in; height: 3.36in; background: #2C1438; border: 3px solid #1A1A1A; border-radius: 10px;
+       box-shadow: inset 0 0 0 3px #7a3fa0; padding: .09in; display: flex; flex-direction: column; position: relative; }
+.pc .num { position: absolute; top: .05in; left: .05in; width: .42in; height: .42in; border-radius: 50%;
+            background: #0E0B16; border: 2px solid #FFD700; color: #FFD700; font: 26px Bangers; display: flex; align-items: center; justify-content: center; z-index: 2; }
+.pc .art { height: 1.95in; border-radius: 6px; overflow: hidden; background: #0E0B16; position: relative; border: 2px solid #1A1A1A; }
+.pc .art img, .slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.pc .art .ph, .slot .ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 0; }
+.pc h3 { margin: .06in 0 .03in; font: 19px Bangers; color: #FFD700; text-align: center; letter-spacing: 1px; -webkit-text-stroke: .4px #1A1A1A; }
+.pc p { margin: 0; font: 13px/1.15 'Patrick Hand'; color: #fff; text-align: center; }
+.ph { color: #8f7fa8; font: 11px Arial; text-align: center; padding: 6px; }
+.slot { position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.round { border-radius: 50%; background: #0E0B16; border: 3px solid #1A1A1A; }
+/* plaque */
+.plaque { width: 7in; height: 5in; margin: .1in auto 0; background: radial-gradient(circle at 50% 35%, #2a2433, #0b0910 80%);
+           border: 4px solid #1A1A1A; border-radius: 14px; box-shadow: inset 0 0 0 6px #3b2f45, inset 0 0 40px rgba(255,0,127,.35);
+           color: #E0D7EC; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: .3in .55in; text-align: center; position: relative; }
+.plaque .runes { position: absolute; left: .18in; right: .18in; font: 15px monospace; color: #FF007F; letter-spacing: 6px; text-shadow: 0 0 6px #FF007F; overflow: hidden; white-space: nowrap; }
+.plaque h2 { font: 700 30px 'UnifrakturCook', serif; color: #FFD700; margin: .05in 0 .1in; text-shadow: 0 0 8px rgba(255,215,0,.5); }
+.plaque .verse { font: 500 21px/1.4 'EB Garamond', Georgia, serif; }
+/* tracker */
+.tracker { width: 1.55in; height: 9.4in; background: linear-gradient(#2B2D42,#0E0B16); border: 3px solid #1A1A1A; border-radius: 8px;
+            box-shadow: inset 0 0 0 3px #555a78; padding: .12in .08in; display: flex; flex-direction: column; }
+.tracker .lbl { font: 18px Bangers; color: #FFD700; text-align: center; line-height: 1; }
+.notch { flex: 1; display: flex; align-items: center; gap: 6px; border-top: 1px solid #6b6f8f; color: #fff; font: 900 15px Montserrat, Arial; padding-left: 4px; }
+.notch:before { content: ''; width: .45in; height: 3px; background: #FFD700; }
+.notch.crouch { background: rgba(255,119,0,.3); } .notch.crouch span:after { content: '  CROUCH'; color: #FF7700; font-size: 10px; }
+.notch.crush { background: rgba(255,0,127,.4); } .notch.crush span:after { content: '  CRUSH'; color: #FF007F; font-size: 10px; }
+table { border-collapse: collapse; width: 100%; font: 12px/1.3 Arial, sans-serif; }
+th, td { border: 1px solid #aaa; padding: 5px 7px; text-align: left; }
+th { background: #eee; }
+@media print { body { background: #fff; } .screen { display: none; } .page { margin: 0; } }
+</style></head><body><div class="screen"><b>Station 5 — DM-held Props & Key</b><br>Print at 100% on Letter, background graphics ON, browser headers/footers OFF. Cut on the dashed lines. Cardstock (110 lb) for cards and tokens. Images marked "art slot" fill in when the PNGs from Art_Generation_Prompts.md are saved in this folder.</div><section class="page"><div class="ptitle"><span class="dm">DM ONLY</span> Taboo Penalty Cards 1–6</div><p class="note">Keep face down. After a slip, roll 1d8 and show only the rolled card.</p><div class="grid" style="grid-template-columns:repeat(3,2.4in)"><div class="pc cut"><div class="num">1</div><div class="art"><img src="penalty_1.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_1.png</div></div><h3>WALL ARROWS</h3><p>+5 to hit, 1d6+2 piercing.</p></div><div class="pc cut"><div class="num">2</div><div class="art"><img src="penalty_2.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_2.png</div></div><h3>CONSTRICTING VINES</h3><p>DC 13 Str save or Restrained. Action + DC 13 Athletics to break free.</p></div><div class="pc cut"><div class="num">3</div><div class="art"><img src="penalty_3.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_3.png</div></div><h3>HEAT METAL</h3><p>Worn or held metal glows hot: drop it or take 1d8 fire.</p></div><div class="pc cut"><div class="num">4</div><div class="art"><img src="penalty_4.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_4.png</div></div><h3>BLINDING FLASH</h3><p>DC 13 Cha save or blinded for 1 round.</p></div><div class="pc cut"><div class="num">5</div><div class="art"><img src="penalty_5.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_5.png</div></div><h3>FLAME JET</h3><p>DC 13 Dex save, 2d6 fire, half on a save.</p></div><div class="pc cut"><div class="num">6</div><div class="art"><img src="penalty_6.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_6.png</div></div><h3>GREASE SIPHON</h3><p>DC 13 Dex save or fall prone.</p></div></div></section><section class="page"><div class="ptitle"><span class="dm">DM ONLY</span> Penalty Cards 7–8 · Pups Token · Crest #5</div><div class="grid" style="grid-template-columns:repeat(3,2.4in);justify-content:start"><div class="pc cut"><div class="num">7</div><div class="art"><img src="penalty_7.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_7.png</div></div><h3>PENDULUM BLADE</h3><p>+5 to hit, 1d8+3 slashing.</p></div><div class="pc cut"><div class="num">8</div><div class="art"><img src="penalty_8.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>penalty_8.png</div></div><h3>CEILING SURGE</h3><p>The ceiling drops an extra 2 ft at once!</p></div></div><div style="display:flex;gap:.5in;align-items:center;margin-top:.3in"><div><div class="ptitle" style="font-size:16px">Swarm of Pups — 2 in token</div><div class="slot round cut" style="width:2in;height:2in"><img src="pups_token.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>pups_token.png<br>Swarm of Pups</div></div></div><div><div class="ptitle" style="font-size:16px">Armory Crest #5 — on solve only</div><div class="slot round cut" style="width:3in;height:3in"><img src="armory_crest_token.png" alt="" onerror="this.remove()"><div class="ph">art slot<br>armory_crest_token.png<br>Crest #5</div></div></div></div></section><section class="page"><div class="ptitle"><span class="dm">DM ONLY</span> Rack Placement &amp; Answer Key</div><p class="note">Never print this on the back of a player prop. Source of truth: Stations/Station_5_Collapsing_Armory_Corridor_of_the_Taboo_Word.md.</p><table><tr><th>Mat position</th><th>Rack tag</th><th>Script</th><th>Lit by a ceiling word?</th></tr><tr><td>Sheet A, top wall, 1st slot</td><td>SPEAR</td><td>Dwarvish</td><td><b>YES</b></td></tr><tr><td>Sheet A, bottom wall, 1st slot</td><td>MACE</td><td>Giant</td><td>no</td></tr><tr><td>Sheet A, top wall, 2nd slot</td><td>NET</td><td>Goblin</td><td><b>YES</b></td></tr><tr><td>Sheet A, bottom wall, 2nd slot</td><td>AXE</td><td>Draconic</td><td><b>YES</b></td></tr><tr><td>Sheet B, top wall, 1st slot</td><td>GLAIVE</td><td>Gnomish</td><td>no</td></tr><tr><td>Sheet B, bottom wall, 1st slot</td><td>RAPIER</td><td>Elvish</td><td><b>YES</b></td></tr><tr><td>Sheet B, top wall, 2nd slot</td><td>HALBERD</td><td>Sylvan</td><td>no</td></tr><tr><td>Sheet B, bottom wall, 2nd slot</td><td>EXECUTIONER'S BLADE</td><td>Infernal</td><td><b>YES</b></td></tr></table><p style="font:15px Arial;margin-top:.2in">Password (first letters of lit weapons, entrance to door): <b style="font-size:22px">S · N · A · R · E</b></p><p class="note">Crest is in the <b>RIGHT</b> pipe. Ceiling: 15 ft, drops 1 ft per real minute; CROUCH at 5 ft, CRUSH at 0 ft. Each slip: bell, 1d8 card, door locks 1 minute (sand timer).</p><p class="note">Decoy: the Sylvan HALBERD tag looks like the Elvish RAPIER card. Elvish loops are closed; Sylvan loops are open.</p></section></body></html>

@@ -1,0 +1,7 @@
+.DS_Store
+# Local agent tooling (third-party repo, not part of the adventure)
+.agents/
+# Scratch and build leftovers
+tmp/
+output/
+__pycache__/
