@@ -32,3 +32,8 @@ Print the PDFs and HTML packs in `Art/Station_N/` at 100% on US Letter, with bac
 * Characters are affectionate homages to *Scooby-Doo*, *Hotel Transylvania* and classic monsters. This is free, non-commercial fan content. All characters and franchises belong to their respective owners.
 * Much of the art is AI-generated or procedurally drawn. Station 5's illustrations are vector stand-ins; see `Art/Station_5/Art_Generation_Prompts.md` to regenerate them.
 * Station design, playtest simulations and print kits were developed with help from Claude.
+
+## License
+This project is licensed under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/). See [LICENSE](LICENSE). You may share and adapt it for non-commercial use, with credit and a link to this repo.
+
+The license covers only the original material here. It grants no rights to the third-party characters and franchises referenced, or to *The Game Master's Book of Traps, Puzzles and Dungeons*.
