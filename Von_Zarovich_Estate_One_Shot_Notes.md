@@ -3,7 +3,7 @@
 ## Overview
 *   **Target Audience:** 6-10 players aged about 14 (range 12-16)
 *   **Duration:** 1 hour
-*   **Format:** 5 station-based puzzle rooms in a single space. Paired players, 10-15 mins per station, managed by a single GM.
+*   **Format:** 5 station-based puzzle rooms in a single space. Pairs play their home stations at the same time (10-15 min), each station run by a helper GM, with a lead GM for the opening and finale.
 *   **Characters:** Level 5 pre-generated characters (see `Halloween_DnD_Character_Sheets-v2.pdf`). Each ability has 3 shared USES; treat each new station as a short rest and refresh them.
 *   **Win condition:** Each station awards one **Crest** (#1-#5). Seat all five in the Grand Iron Door to escape (see the finale in `Puzzle_Station_Clue_Handouts.md`).
 
@@ -15,6 +15,24 @@
 | `Stations/Playtests/Station_N_Playtest.md` | Simulated playtest reports (estimates, not live data) | DM |
 | `Puzzle_Station_Clue_Handouts.md` | Print-ready player handouts for all five stations plus the finale | Players, when earned |
 | `Mock_Playtest_Simulation_Agent_Prompt.md` | Reusable prompt for running another simulated playtest | DM |
+| `Helpers/Station_N_Helper_Cards.pdf` | One kit per helper GM: 2-page helper card plus envelope labels and contents | Helper GMs (envelope contents go to players when triggered) |
+| `Finale/Opening_Scene.md` | 5-minute opening: the invitation, the Phantom, splitting up, rules | Lead GM |
+| `Finale/Finale_Script.md` | Transition at the Gate, minion fight, accusation, capture, unmasking | Lead GM |
+| `Finale/Finale_Print_Kit.pdf` | Suspect Board, spare Evidence Cards, minion cards, Case Closed certificates | Players / GMs |
+| `Finale/Evidence_and_Suspects.md` | Source of truth for the culprit, Evidence Cards and suspects | DM |
+
+## Run of Show
+Pairs play their home stations **all at once**, each with a **helper GM** running that station's clue envelopes. The lead GM runs the opening, floats, handles the Gate and runs the finale.
+
+| Clock | Phase | Lead GM | Helpers |
+|---|---|---|---|
+| 0:00–0:15 | Arrival & setup | Snacks, costumes, seat the pairs | Stations covered, envelopes ready |
+| 0:15–0:20 | **Opening** (`Finale/Opening_Scene.md`) | Invitation, Phantom, "let's split up," rules | Stand by |
+| 0:20–0:37 | **Stations** (10–15 min) | Float; start the 15-min master timer | Run the station clock, open envelopes on cue |
+| ~0:32–0:37 | **Transition** (rolling) | Crest moment at the Gate, flip the Suspect Board | Hand over Envelope 5 (Crest + Evidence), send the pair to the Gate |
+| 0:37 | **Bell** = hard stop | Ring it | Open Envelope 4 for stragglers, finish within about 1 min |
+| 0:38–0:52 | **Finale** (`Finale/Finale_Script.md`) | Gate → minion fight → accusation → capture → unmasking | Run minion clusters in the fight |
+| 0:52–1:00 | Case Closed | Certificates, brag round, photo | Collect props |
 
 ## Character Roster & Pairs
 | Station | Pair | Classes |
@@ -89,7 +107,9 @@ Book: *The Game Master's Book of Traps, Puzzles and Dungeons* by Jeff Ashworth (
 *   Every station targets 10-15 minutes. Simulated runs landed between 10m 40s and 12m 10s, all near the low end, so a careful pair may finish early. Station 3 (Noon Mark) and Station 4 have early-finish options.
 
 ## Open Issues / Before Game Day
-*   [ ] **Schedule:** decide whether pairs play their own station at the same time or rotate through all five. "1 hour" fits one station per pair plus the intro and finale, but not five stations in a row (about 60-75 min). If pairs rotate, the character hooks only fit their home station.
+*   [x] **Schedule:** decided. Pairs play their home station at the same time, with one helper GM per station (see Run of Show).
+*   [x] **Finale culprit:** Anton, the Alchemist's Apprentice (see `Finale/Evidence_and_Suspects.md`).
+*   [ ] Brief the five helper GMs; give each their `Helpers/Station_N_Helper_Cards.pdf` and pack their envelopes.
 *   [ ] Confirm the exact book page numbers.
 *   [ ] Station 2: decide Trickster's Shuffle vs. fixed answer (#6).
 *   [ ] Station 4: buy a real snack for Scooby, and check allergies.

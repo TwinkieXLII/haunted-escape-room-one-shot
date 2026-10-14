@@ -1,6 +1,6 @@
 # Haunted Escape Room One-Shot: The Von Zarovich Estate
 
-A one-hour Halloween D&D 5e one-shot for 6–10 players aged about 12–16. Pairs of Level 5 pre-generated monster and mystery-gang characters each tackle a puzzle station inside a haunted castle. Every station awards a Crest, and all five Crests open the Grand Gate. It's built to be run by one GM at a single table space, with print-and-play props.
+A one-hour Halloween D&D 5e one-shot for 6–10 players aged about 12–16. Pairs of Level 5 pre-generated monster and mystery-gang characters each tackle a puzzle station inside a haunted castle, all at the same time. Every station awards a Crest and a clue. All five Crests open the Grand Gate, and then the whole group fights off the Phantom's minions, works out who's behind the haunting, and unmasks the culprit, Scooby-Doo style. It's run by a lead GM with one helper GM per station, using clue envelopes and print-and-play props.
 
 ## Start here
 | File | What it is |
@@ -9,6 +9,8 @@ A one-hour Halloween D&D 5e one-shot for 6–10 players aged about 12–16. Pair
 | [Stations/](Stations/) | One file per station: DM coaching notes, setup, answer key, four-clue ladder, failure rules, prop specs |
 | [Stations/Playtests/](Stations/Playtests/) | Simulated playtest reports (estimates, not live-table data) |
 | [Stations/Introductions/](Stations/Introductions/) | Player-facing station introductions |
+| [Finale/](Finale/) | Opening scene, finale script (minion fight, accusation, unmasking), evidence and suspects, print kit |
+| [Helpers/](Helpers/) | One printable kit per helper GM: helper card plus clue-envelope labels and contents |
 | [Puzzle_Station_Clue_Handouts.md](Puzzle_Station_Clue_Handouts.md) | Print-ready player handouts with no answers, plus the finale gate |
 | [Halloween_DnD_Character_Sheets-v2.pdf](Halloween_DnD_Character_Sheets-v2.pdf) | The 10 pre-generated character sheets |
 | [BRANDGUIDE.md](BRANDGUIDE.md) | "Neon Haunted Comic" art direction and print specs |
