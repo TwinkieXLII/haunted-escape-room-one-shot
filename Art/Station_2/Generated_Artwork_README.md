@@ -14,3 +14,7 @@ Generated using the built-in image generation tool from [the corrected prompts](
 The penalty cards are square illustrations in a 3-column by 2-row sheet, rather than 2.5 × 3.5 inch cards. Print proportionally without stretching. These PNGs are not guaranteed 300 ppi at the proposed paper sizes.
 
 Cut the two parchment clues apart. Keep the ledger behind the DM screen until its clue trigger. Vial numbers are the only intended distinguishing marks; no vial is highlighted as the answer.
+
+## Printable packs
+
+Corrected PDFs are now assembled. See [PRINT_AND_PACK.md](PRINT_AND_PACK.md) for the 13-page complete pack and envelope instructions. The old HTML kit was deleted because it revealed the counterfeit. New packs use only the corrected artwork.

@@ -102,7 +102,7 @@ The Solution Matrix, the clue texts and the gear-back pencil marks are **DM eyes
 | **Peg 4** | **3 Teeth** | The Scythe (3 stars) | *"The reaper's blade cuts last of all: / On Peg Four its lights bid the Phantom fall."* |
 | **Check** | **4 + 7 + 7 + 3 = 21** | **XXI** in the chart's center | *"Let every star bite into brass; / The sky's heart counts the whole — then pass."* |
 
-**Decoys:** the Raven (6 stars, another winged constellation; it tempts Peg 1), the Coffin (5 stars; it tempts the "reaper" line), and the Wolf (8 stars). Any decoy swap breaks the 21 total (for example Raven: 6 + 7 + 7 + 3 = 23).
+**Decoys:** the Raven (6 stars, another winged constellation; it tempts Peg 1), the Coffin (5 stars; it tempts the "reaper" line), and the Wolf (8 stars). A single decoy substitution breaks the 21 total (for example Raven: 6 + 7 + 7 + 3 = 23). Multiple substitutions can still total 21 (3 + 4 + 6 + 8), so the sum is only a cross-check; the riddle and order determine the solution.
 
 ---
 

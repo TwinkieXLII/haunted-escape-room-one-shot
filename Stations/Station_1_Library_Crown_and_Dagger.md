@@ -30,7 +30,7 @@ This room tests whether the players *look before they act*. Every statue carries
 | Inspection | 03:00–05:00, if they are guessing instead of looking | *"These are statues of real people. What would a statue remember about the person?"* / *"Who wants to get up close to one?"* |
 | Character hook | 05:00–06:00 | Fred: *"Your sheet says you love splitting up. Anything on there that fits?"* Griffin: *"Barov's hands are way up there. Anything on your sheet that reaches far?"* |
 | Logic | 08:00–09:00 | *"You've found five stains. What's strange about the sixth statue?"* / *"Have you checked the plinths they stand on?"* |
-| Taboo warning | Any time someone reaches for the crown or dagger without a reason | *"The gargoyle's eyes flare red. Are you sure?"* (Say it every time, right or wrong, so it gives nothing away.) |
+| Taboo warning | Before any crown or dagger placement | *"The gargoyle's eyes flare red. Are you sure?"* (Say it every time, right or wrong, so it gives nothing away.) |
 
 ### What NOT to say or do
 *   Never name an item-statue pair, and never confirm a pairing before the token is placed. "Try it and see" is fine.
@@ -49,7 +49,7 @@ This room tests whether the players *look before they act*. Every statue carries
 | 13:00 | Not solved | Clue 4 in full, then let them place the tokens. Gate opens by 15:00. |
 
 ### Handling common derails
-*   **Impulsive player grabs a relic at 00:30:** Let it happen. The first clang teaches the rule faster than any explanation. If it's the crown or dagger, use the taboo warning line first; if they go ahead, release the Spectre (that fight takes about a minute and they'll love it).
+*   **Impulsive player grabs a relic at 00:30:** Let them handle and inspect it freely. Picking up, touching, moving or inspecting a relic triggers nothing. Only placing it with the wrong statue causes the clang and reset. Before any crown or dagger placement, give the same neutral warning; release the Spectre only for dagger to Barov or crown to Teresa.
 *   **Combat urges (Net Trap on the gargoyle, attacking statues):** Allow one round of fun. The gargoyle is stone until triggered; the net drapes over it and it blinks. Then pull them back with an inspection nudge. Cap derails at 1 minute.
 *   **Brute-forcing by trying every relic:** The all-drop rule plus the gargoyle shriek makes this costly. Narrate the shriek getting louder each time.
 *   **Clever alternative solutions (reward them, as the book says):** smelling the statues, rubbing dust off with a sleeve, checking which relic is "heaviest with use", using Fred's Survival (+3) to read the mud as farmland mud. Give the detail without a roll, or with Advantage. If they argue a pairing logically and correctly, let it stick.
@@ -93,6 +93,7 @@ The **Solution Matrix**, the **Clue 4 text**, and the statue **full titles** are
 ---
 
 ## Failure Consequences [DM ONLY]
+*   **Placement trigger only:** Handling and inspecting relics is safe. A placement means offering a relic to a statue (putting the token in or beside its hands/card, or declaring the offering). Merely moving a token around the table is not a placement.
 *   **Any Misplacement (book rule):** The statue shudders and *every* relic placed so far clatters back onto the table with an echoing clang. The players must re-place the ones they had right.
 *   **Second and Later Misplacements:** The gargoyle wakes and shrieks at everyone it can see: DC 12 Wis save or take 1d6 psychic damage. Griffin is invisible and is never targeted.
 *   **The Taboo Swap (Crown & Dagger):** Placing the Dagger in Barov's hands or the Crown in Teresa's releases a minor **Spectre** (AC 12, 14 HP, +4 to hit, 1d6 necrotic), scaled so Level 5 teens can dispatch it in 1 round. This is the "critical mistake" that unlocks Clue 4 early.

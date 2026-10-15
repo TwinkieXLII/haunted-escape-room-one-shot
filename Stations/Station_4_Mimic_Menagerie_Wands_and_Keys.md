@@ -70,7 +70,7 @@ A reset (wrong alcove) costs about 45 seconds of table time. If a reset happens 
     *   *Anything else plausible:* if it answers one question about one alcove at a cost (an action, a charge, a risk), say yes.
 
 ### Adjudicating the character hooks
-*   **Scooby — Scooby Snack Surge** (sheet: *Action: eat a snack to instantly gain +10 to Perception to sniff out traps/mimics*; Scooby's Perception is +4, so +14 total). Requires an actual snack (toss a real one). Scooby must ask **one** question: "something alive?" (finds the mimic) or "something fake?" (finds the illusion). Roll vs DC 12; on +14 he only fails on a natural 1 or 2. One use per short rest. **After a reset**, Scooby can sniff again only without the surge (DC 15) unless you hand over a second snack as a mercy.
+*   **Scooby — Scooby Snack Surge** (sheet: *Action: eat a snack to instantly gain +10 to Perception to sniff out traps/mimics*; Scooby's Perception is +4, so +14 total). Requires an actual snack (toss a real one). Scooby must ask **one** question: "something alive?" (finds the mimic) or "something fake?" (finds the illusion). Roll **d20 +14 vs DC 17**: rolls of 1–2 fail, and 3–20 succeed. A failed sniff spends the surge but gives no location or false information; it does not reset the room. One use per short rest. **After a reset**, Scooby can sniff again only without the surge (DC 15) unless you hand over a second snack as a mercy.
 *   **Murray — Sandstorm Shuffle** (sheet: *Action: unravel bandages to automatically grapple and restrain an enemy*; the overview says 2 rounds). There is no initiative here: when the mimic springs, it gets **one** bite at whoever disturbed it (or it chomps the mage hand and gets no bite), then Murray acts. Shuffle automatically restrains it for 2 rounds, and Scooby's two Big Bites (+7, 1d8+4 each) normally finish its 15 HP.
 *   **Murray — Nature (+4):** if Murray asks what he knows about mimics, Nature DC 10: "Mimics digest with acid. Acid won't bother one, but poison makes them gag." This is a fair alternate to Clue 2.
 *   **Murray — Bandage Whip (reach 2 squares):** used for the whip pull and the Clue 4 tap (see above).
@@ -98,7 +98,7 @@ Shown for **Layout A** (the book's order). After a reset, use the Shuffle Tracke
 | :---: | :--- | :--- | :--- | :--- |
 | **I** | **Illusion Key** | **Bright Light** | Sweep the beam: this key's shadow is painted on and *doesn't shift* (Perception DC 12, automatic if a player says they're watching the shadows). Place the "Illusion Dispelled" tile. | Fingers close on nothing; the key pops into cold vapour and a gong sounds. No damage. **Reset.** |
 | **II** | **Adolescent Mimic** (AC 12, 15 HP) | **Poison** | The "key" gags, sneezes, and slumps into a grey blob with a purple tongue. It sulks and won't attack unless lifted or attacked. Place the mimic standee. | It bites: **+5 to hit, 6 (1d8+2) piercing + 2 acid** (or it crunches the mage hand and gets no bite). Murray's Shuffle and Scooby finish it, then **Reset.** |
-| **III** | **Explosive Construct** | **Acid** | Acid eats through its metal casing, exposing ticking gears; the fuse fizzles out. Disarmed. Place the "Disarmed Construct" card. | Shrapnel blast: everyone within 30 ft makes a **DC 12 Dex save**, taking **5 (2d4)** damage, half on a success. **Reset.** |
+| **III** | **Explosive Construct** | **Acid** | Acid eats through its metal casing, exposing ticking gears; the fuse fizzles out. Disarmed. Place the "Disarmed Construct" card. | **Before Acid:** shrapnel blast; everyone within 30 ft makes a **DC 12 Dex save**, taking **5 (2d4)** damage, half on a success. **Reset.** **After Acid:** harmless scrap, no damage or reset; it cannot unlock the door. |
 | **IV** | **THE REAL CREST** | **Mage Hand** | The spectral hand lifts the key smoothly from 30 ft. The door unlocks. Hand over Crest #4. | Grabbing it by hand also works (it's the real one), but the players don't know that, so it's a gamble. |
 
 ### Wand Reaction Matrix  [DM ONLY]: read the same words every time
@@ -106,7 +106,7 @@ Shown for **Layout A** (the book's order). After a reset, use the Shuffle Tracke
 | :--- | :--- | :--- | :--- | :--- |
 | **Illusion** | Shadow stays frozen. **Reveal.** | "The mist drifts straight *through* the key." **Reveal.** | "The acid passes through and hisses on the wall behind." **Reveal.** | Gong, vapour. **Reset.** |
 | **Mimic** | "Its shadow swings with the beam." | Gags and slumps. **Reveal.** | "The acid splashes over the key and hisses on the pedestal. The key looks unharmed." | Bites the hand, lunges. **Reset.** |
-| **Construct** | "Its shadow swings with the beam." | "The mist beads on the metal and drifts away." | Casing melts, fuse dies. **Reveal (disarmed).** | Explodes. **Reset.** |
+| **Construct** | "Its shadow swings with the beam." | "The mist beads on the metal and drifts away." | Casing melts, fuse dies. **Reveal (disarmed).** | Armed: explodes and **resets**. After Acid: harmless scrap; no reset, not the real key. |
 | **Real key** | "Its shadow swings with the beam." | "The mist beads on the metal and drifts away." | "The acid splashes over the key and hisses on the pedestal. The key looks unharmed." | **Success.** |
 
 > The Acid lines for the **mimic** and the **real key** are deliberately identical, and so are the Poison lines for the **construct** and the **real key**. Each one-charge wand rules out only one hazard, so Scooby's nose or careful charge-spending is needed to finish.
@@ -127,7 +127,8 @@ Pair / starting layout log: ______ / ___ · ______ / ___ · ______ / ___ · ____
 
 ## Failure & Combat Scaling (For 14-Year-Olds)  [DM ONLY]
 *   **Triggering the Mimic:** Book stats are +7 to hit, 11 (2d8+2) + 4 acid; scaled here to **+5 to hit, 6 (1d8+2) piercing + 2 acid**, AC 12, 15 HP. No initiative: one bite, then **Murray's Sandstorm Shuffle** (Action) automatically restrains it for 2 rounds, and Scooby's two Big Bites (+7, 1d8+4) or Murray's Bandage Whip (+5, 1d6+2) finish it in about a round. Then reset.
-*   **Triggering the Construct:** Book is DC 15 Dex, 4 + 4 damage; scaled here to **DC 12 Dex, 5 (2d4), half on a save**, for everyone within 30 ft. Then reset.
+*   **Disarmed construct:** after Acid, handling or lifting it (including Mage Hand) is safe. The door rejects it without a reset. A room reset restores the construct to its armed state in the new layout.
+*   **Triggering the armed Construct:** Book is DC 15 Dex, 4 + 4 damage; scaled here to **DC 12 Dex, 5 (2d4), half on a save**, for everyone within 30 ft. Then reset.
 *   **Triggering the Illusion:** no damage, just a gong and a reset.
 *   Scooby has 55 HP and Murray 38, so neither hazard can knock anyone out. The real cost is time and the shuffle.
 
@@ -142,10 +143,11 @@ Pair / starting layout log: ______ / ___ · ______ / ___ · ______ / ___ · ____
 *   **Calibration:** **Just Helpful Enough.** Tells them grabbing by hand goes badly, that the stud line is the safe zone, and that two wands are limited. It doesn't say which alcove holds what (the marks are in front of all four, because the contents shuffle).
 
 ### Clue 2: Scooby Snack Surge (Character Sheet Feature), minute 5–6
-*   **Trigger:** Toss Scooby a real treat! Scooby uses *Scooby Snack Surge* (Action; +10 Perception, total +14, DC 12) and asks **one** question: "alive?" or "fake?"
-*   **Text (fill in from the current layout):**
+*   **Trigger:** Toss Scooby a real treat! Scooby uses *Scooby Snack Surge* (Action; +10 Perception, total +14, DC 17) and asks **one** question: "alive?" or "fake?"
+*   **Text on a successful check (fill in from the current layout):**
     > *"Scooby's snout twitches into overdrive. Alcove ___ smells like a wet swamp monster that just ate a meatloaf. Something in there is breathing."* (alive → mimic)
     > *or:* *"Alcove ___ smells of... nothing at all. Not metal, not dust. It's like the key isn't there."* (fake → illusion)
+*   **Failed sniff:** "The snack crumbs and old smells muddle your nose. You cannot isolate an alcove." Continue with the wands or Murray's lore; do not repeat the spent surge without a mercy snack.
 *   **Alternate:** Murray's Nature DC 10 mimic lore (see DM Notes).
 *   **Calibration:** **Just Helpful Enough.** It rewards using a sheet feature and removes one hazard, but never points at the real key.
 
@@ -162,7 +164,7 @@ Pair / starting layout log: ______ / ___ · ______ / ___ · ______ / ___ · ____
 
 ### Clue 4: Murray's Bandage Tap (Fail-Forward Bailout), reserve only
 *   **Trigger:** Strictly in reserve. Use it only after a critical mistake (a reset after 10:00) or at **11:00** if they're stuck. Prompt: "Murray, your Bandage Whip reaches 2 squares. Want to give the pedestals a gentle tap, without touching the keys?"
-*   **Text (fill in from the current layout):**
+*   **Text on a successful check (fill in from the current layout):**
     > *"Tap... the pedestal under Alcove ___ lets out an irritated, wet snore. Tap... Alcove ___ gives off a faint clockwork tick-tick-tick. Tap... the whip passes straight through the key in Alcove ___. Tap... Alcove ___ rings like a pure, hollow brass bell."*
 *   **Calibration:** **Too Helpful (by design): safety net.** It gives the whole answer. Only use it to protect the session clock.
 

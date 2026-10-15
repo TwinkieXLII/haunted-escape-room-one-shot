@@ -2,6 +2,10 @@
 
 Generated with the built-in image generator and the approved Station 2 visual references. [Prompt manifest](Art_Generation_Prompts.md) · [BRANDGUIDE](../../BRANDGUIDE.md).
 
+## Complete print kit
+
+[Complete Station 1 PDF](Station_1_Complete_Print_Pack.pdf) — 16 Letter pages, including introduction, props, reveals, DM notes, helper envelopes and evidence. Print single-sided at Actual Size / 100%. Follow [PRINT_AND_PACK.md](PRINT_AND_PACK.md) for assembly and page numbers. The complete kit contains DM answers; hand out individual props after assembly.
+
 ## Print packs
 - [Player starting props](Station_1_Player_Print_Pack.html): six 4 × 6 inch ancestor cards, six relic tokens and gargoyle watcher.
 - [DM-held discoveries and reveals](Station_1_Reveals_Print_Pack.html): six 3.5 × 2 inch inspection slips, reading-table inscription, plinth plate, Archive Crest #1, Spectre standee and full-title labels.

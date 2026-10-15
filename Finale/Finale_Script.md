@@ -17,7 +17,7 @@
 ## 1 · Transition at the Gate (as each pair arrives)
 When a pair walks up with their Crest:
 > They slot **Crest #N** into its socket. It glows and the iron wolf's eye lights up.
-1. Make it a 15-second moment: the whole room hears it. *"The Library Crest is home! Three to go!"*
+1. Make it a 15-second moment: the whole room hears it. *"The Library Crest is home! Four to go!"*
 2. They lay their **Evidence Card** face up beside the **Suspect Board**, which you flip over when the first pair arrives.
 3. Give the early arrivals a job: *"Someone in this castle is faking that ghost. Read the evidence and figure out who."* Encourage them to point and argue, but **don't let them say the final answer yet**: *"Hold that thought for when everyone's here."*
 4. **At 15:00, ring the bell.** Any stragglers get their Envelope 4 bailout and arrive within about a minute.

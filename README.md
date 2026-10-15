@@ -5,6 +5,7 @@ A one-hour Halloween D&D 5e one-shot for 6–10 players aged about 12–16. Pair
 ## Start here
 | File | What it is |
 |---|---|
+| [DM_Guide/DM_Guide.pdf](DM_Guide/DM_Guide.pdf) | **The Dungeon Master's Grimoire**: the complete ornate guide with lore, room bindings, rules, hints and solutions for all five stations, plus the finale |
 | [Von_Zarovich_Estate_One_Shot_Notes.md](Von_Zarovich_Estate_One_Shot_Notes.md) | Overview: roster and pairs, station summaries, sources, open issues |
 | [Stations/](Stations/) | One file per station: DM coaching notes, setup, answer key, four-clue ladder, failure rules, prop specs |
 | [Stations/Playtests/](Stations/Playtests/) | Simulated playtest reports (estimates, not live-table data) |
@@ -27,7 +28,7 @@ A one-hour Halloween D&D 5e one-shot for 6–10 players aged about 12–16. Pair
 | 5 | The Collapsing Armory | Corridor of the Taboo Word | Frank & Wayne |
 
 ## Printing
-Print the PDFs and HTML packs in `Art/Station_N/` at 100% on US Letter, with background graphics on and browser headers/footers off. Use 110 lb cardstock for cards and tokens. Some stations rebuild their packs from a Python script in the same folder (`python3 build_*.py`). Keep anything marked **DM ONLY** behind the screen.
+Print the PDFs and HTML packs in `Art/Station_N/` at 100% on US Letter, with background graphics on and browser headers/footers off. Use 110 lb cardstock for cards and tokens. Rebuild PDFs with `python build_pdfs.py all --check`, or select targets such as `python build_pdfs.py station1 station4 finale --check`. See [BUILDING.md](BUILDING.md) for setup, source files and build targets. Keep anything marked **DM ONLY** behind the screen.
 
 ## Credits and notes
 * Puzzle mechanics are adapted from *The Game Master's Book of Traps, Puzzles and Dungeons* by Jeff Ashworth. This repo summarizes and reworks those puzzles for this table; it doesn't reproduce the book, so pick up a copy for the originals.

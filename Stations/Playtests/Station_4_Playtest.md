@@ -120,3 +120,6 @@ The simulation exposed two running problems. Both are fixed in the station file'
 2.  **Enforce the charge-bead handoff (Tip 3).** At 04:45 Tyler still had his bead after firing Poison, because the DM narrated before collecting it, which led to a 30 s rules argument. The DM now holds out a hand for the bead *before* narrating any Poison or Acid result.
 
 *No changes were needed to DCs, damage, clue wording, or layouts; they performed as intended in this run.*
+
+
+> Rules revision, 14 October 2026: this historical mock transcript used DC 12. Current boosted sniff is DC 17 (the shown roll of 18 still succeeds). Acid-disarmed constructs are safe to lift and do not reset the room; see the current station rules.

@@ -39,10 +39,11 @@
 # Station 1 Helper GM — Running the Room
 
 ## Failure rules
-- **Any wrong relic:** the statue shudders and *every* relic placed so far clatters back to the table. Sweep them all back yourself, loudly.
+- **Placement only:** handling/inspection is safe. An offering to a statue counts; moving a token around the table does not.
+- **Any wrong placement:** the statue shudders and *every* relic placed so far clatters back to the table. Sweep them all back yourself, loudly.
 - **2nd wrong placement onward:** the gargoyle shrieks at everyone it can see: DC 12 Wis save or 1d6 psychic. **Griffin is invisible and never targeted.** Point that out the first time; he'll love it.
 - **Crown ↔ Dagger swap** (dagger to Barov or crown to Teresa): a minor **Spectre** appears (AC 12, 14 HP, +4 to hit, 1d6 necrotic). Fred's Net Trap (DC 13 Dex) plus Griffin's Sneak Attack ends it in about a minute. This unlocks Envelope 4 early.
-- **Taboo warning:** whenever someone reaches for the crown or dagger, say *"The gargoyle's eyes flare red. Are you sure?"* Say it **every time, right or wrong**, so it gives nothing away.
+- **Taboo warning:** before any crown or dagger placement, say *"The gargoyle's eyes flare red. Are you sure?"* Say it **every time, right or wrong**, so it gives nothing away.
 
 ## Nudges (questions only, never answers)
 | When | Say |

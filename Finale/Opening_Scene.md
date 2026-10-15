@@ -16,6 +16,39 @@
 >
 > The doors close behind you with a BOOM. Candles gutter. In the centre of the great hall stands the Grand Gate: black iron, five empty sockets in a ring, and a lock shaped like a snarling wolf.
 
+## Meet the Estate Staff (read aloud before the Phantom, 60–90 seconds)
+
+**DM coaching:** These are the three staff members, not yet announced as suspects. Say each name clearly. Give all three equal attention and allow one quick player response apiece. Keep the trait-comparison board hidden until the return to the Gate. Use these beats within the opening's five-minute budget by shortening the invitation and ghost performance; extended conversation is optional. Do not emphasize Anton's evidence traits or play him as obviously guilty.
+
+### Anton, the Alchemist's Apprentice
+*Voice: brisk, a little defensive; straighten an imaginary coat.*
+> A young man with an ink-stained guest list hurries over. “Anton. Alchemist's apprentice. Welcome to the Estate. Please don't drink anything just because it's glowing. Apparently we have to say that now.”
+>
+> He looks over your group. “A vampire, a mummy, and a talking dog. Right. I'll put you down as ‘family gathering.’ Can I take a bag?”
+
+**If asked about his master:** “We had a professional disagreement. He said I needed more practice. I said he needed a holiday.” Then move to Tobias; do not explain the firing yet.
+
+### Master Tobias, the Clockmaker
+*Voice: clipped and fussy; listen to an imaginary pocket watch.*
+> Beside the great clock, a small man with snowy hair raises one finger. “Master Tobias. Clockmaker. You're forty-three seconds late. Or my clock is forty-three seconds fast. Obviously, it's the first one.”
+>
+> He snaps his watch shut. “Enjoy the masquerade. Touch nothing that ticks. If it starts ticking after you touch it, come and find me. Walking, please.”
+
+**If asked about the castle:** “A beautiful collection of mechanisms, maintained by a staff with no respect for schedules.” Give Anton and Grisela the same brief, irritated glance.
+
+### Grisela, the Groundskeeper
+*Voice: low, dry, unimpressed; scrape an imaginary muddy boot.*
+> A towering woman props a muddy spade beside the door. “Grisela. Groundskeeper. Gardens, graves, gutters. If it's outside and unpleasant, it's mine.”
+>
+> She surveys the guests. “Stay on the paths. Leave the roses alone. And if a skeleton asks you for directions, send him to me. He's supposed to be working.”
+
+**If asked about the ghost:** “Never seen it pull a weed. Can't say I think much of it.”
+
+### Move into the ghost's entrance
+> Tobias turns back to his clock. Anton ducks through a service doorway with the guest list. Grisela shoulders her spade and heads toward the courtyard. For a moment, the great hall is quiet.
+
+Pause, then begin the Phantom's entrance. All three have stepped away; do not spotlight Anton's departure.
+
 ## 2 · The Phantom (perform it, about 2 min)
 Use a big wobbly ghost voice. Hold one arm out and **point with your LEFT hand**.
 > A howl rolls down the staircase. A pale shape swoops over the banister: a cloaked figure in a ghostly mask, glowing green at the edges. It floats... a little low for a ghost, honestly. **About kid height.**

@@ -25,7 +25,7 @@
 |---|---|---|---|---|
 | **Illusion** | Shadow stays frozen. **Reveal.** | "The mist drifts straight *through* the key." **Reveal.** | "The acid passes through and hisses on the wall behind." **Reveal.** | Gong, cold vapour. **Reset.** |
 | **Mimic** | "Its shadow swings with the beam." | Gags and slumps into a grey blob. **Reveal.** | "The acid splashes over the key and hisses on the pedestal. The key looks unharmed." | Bites, lunges. **Reset.** |
-| **Construct** | "Its shadow swings with the beam." | "The mist beads on the metal and drifts away." | Casing melts, fuse dies. **Reveal (disarmed).** | Explodes. **Reset.** |
+| **Construct** | "Its shadow swings with the beam." | "The mist beads on the metal and drifts away." | Casing melts, fuse dies. **Reveal (disarmed).** | Armed: explodes, **reset**. After Acid: harmless scrap; no reset, not the real key. |
 | **Real key** | "Its shadow swings with the beam." | "The mist beads on the metal and drifts away." | "The acid splashes over the key and hisses on the pedestal. The key looks unharmed." | **Success!** |
 
 <!-- page -->
@@ -45,11 +45,12 @@
 
 ## Hazards (scaled for teens)
 - **Mimic** (AC 12, 15 HP): one bite at whoever disturbed it, +5 to hit, **1d8+2 piercing + 2 acid** (it crunches a mage hand instead and gets no bite). Then Murray's Shuffle and Scooby's bites finish it, then **reset**.
-- **Construct:** everyone within 30 ft makes a **DC 12 Dex save, 2d4** damage, half on a save. Then **reset**.
+- **After Acid:** construct is harmless, including Mage Hand; door rejects it without a reset. A room reset rearms it.
+- **Armed construct:** everyone within 30 ft makes a **DC 12 Dex save, 2d4** damage, half on a save. Then **reset**.
 - **Illusion:** a gong, no damage. **Reset.**
 
 ## Character rulings
-- **Scooby, Scooby Snack Surge** (needs a real snack): +14 Perception vs DC 12. Scooby asks **one** question: *"alive?"* (finds the mimic) or *"fake?"* (finds the illusion). After a reset, only DC 15 without a surge, unless you give a mercy snack.
+- **Scooby, Scooby Snack Surge** (needs a real snack): +14 Perception vs **DC 17** (1–2 fail; 3–20 succeed). Failed sniff: surge spent, no location/false clue, no reset. Scooby asks **one** question: *"alive?"* (finds the mimic) or *"fake?"* (finds the illusion). After a reset, only DC 15 without a surge, unless you give a mercy snack.
 - **Murray, Sandstorm Shuffle** (Action): automatically restrains the mimic for 2 rounds.
 - **Murray, Nature DC 10:** *"Mimics digest with acid. Acid won't bother one, but poison makes them gag."*
 - **Murray, Bandage Whip** (reach 2 squares): lifting a key counts as Mage Hand. **Tapping a pedestal** (not the key) is safe and gives that alcove's Envelope 4 sound.
@@ -95,7 +96,7 @@ Station 4 · Menagerie. Open on solve: **Crest #4 + Evidence Card E4**.
 > Just past the line of brass studs, the floor is scorched in a black fan shape: deep tooth gouges in the flagstones and a dried, sticky puddle. Nothing like that is on your side of the line. The wand cradles are worn smooth. Two of them have a single socket where a charge-gem sits.
 <!-- /card -->
 <!-- card: Envelope 2 · Scooby Snack Surge (read aloud) -->
-*Fill in the alcove from the current layout.*
+*Roll d20 +14 vs DC 17 first. On success, fill in the alcove from the current layout. On failure: "The snack crumbs and old smells muddle your nose. You cannot isolate an alcove." Surge spent; no reset.*
 > "alive?" → Scooby's snout twitches into overdrive. Alcove ___ smells like a wet swamp monster that just ate a meatloaf. Something in there is breathing.
 > "fake?" → Alcove ___ smells of... nothing at all. Not metal, not dust. It's like the key isn't there.
 <!-- /card -->

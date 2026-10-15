@@ -5,3 +5,6 @@
 tmp/
 output/
 __pycache__/
+
+# Local Python build environment
+.venv/

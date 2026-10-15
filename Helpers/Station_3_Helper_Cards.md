@@ -36,7 +36,7 @@
 | 4 | **3** | The Scythe ("reaper's blade") |
 | Check | 4+7+7+3 = **21** | **XXI** at the chart's centre |
 
-Decoys: the Raven (6), the Coffin (5), the Wolf (8). Any decoy breaks the 21 total.
+Decoys: the Raven (6), the Coffin (5), the Wolf (8). A single decoy substitution breaks the 21 total. The total alone is not unique; check the riddle and order too.
 
 <!-- page -->
 
